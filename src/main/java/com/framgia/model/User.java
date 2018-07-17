@@ -15,7 +15,6 @@ public class User implements Serializable {
 	private String fullname;
 	private Date createdDate;
 	private List<Comment> comments;
-	private List<UserRole> userRoles;
 	private List<UserFollowNews> userFollowNewses;
 	private List<News> newses;
 
@@ -88,14 +87,6 @@ public class User implements Serializable {
 
 	public void setComments(List<Comment> comments) {
 		this.comments = comments;
-	}
-
-	public List<UserRole> getUserRoles() {
-		return userRoles;
-	}
-
-	public void setUserRoles(List<UserRole> userRoles) {
-		this.userRoles = userRoles;
 	}
 
 	public List<UserFollowNews> getUserFollowNewses() {
